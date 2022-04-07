@@ -1,0 +1,10 @@
+{
+  "name": "embroider-x-ember-css-modules",
+  "version": "0.0.0",
+  "description": "A demo of embroider and ember-css-modules",
+  "main": "index.js",
+  "repository": "https://github.com/wondersloth/embroider-x-ember-css-modules.git",
+  "author": "Matthew Edwards <medwards@linkedin.com>",
+  "license": "MIT",
+  "private": true
+}
