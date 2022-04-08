@@ -6,5 +6,12 @@
   "repository": "https://github.com/wondersloth/embroider-x-ember-css-modules.git",
   "author": "Matthew Edwards <medwards@linkedin.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "workspaces": [
+    "packages/sample-app",
+    "packages/some-addon"
+  ],
+  "volta": {
+    "node": "14.19.1"
+  }
 }
