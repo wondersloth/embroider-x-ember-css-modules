@@ -3,6 +3,8 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
+  const shouldUseEmbroider = false;
+
   let app = new EmberApp(defaults, {
     // Add options here
   });
@@ -20,12 +22,16 @@ module.exports = function (defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  const { Webpack } = require('@embroider/webpack');
-  return require('@embroider/compat').compatBuild(app, Webpack, {
-    skipBabel: [
-      {
-        package: 'qunit',
-      },
-    ],
-  });
+  if (shouldUseEmbroider) {
+    const { Webpack } = require('@embroider/webpack');
+    return require('@embroider/compat').compatBuild(app, Webpack, {
+      skipBabel: [
+        {
+          package: 'qunit',
+        },
+      ],
+    });
+  }
+
+  return app.toTree();
 };

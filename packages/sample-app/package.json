@@ -22,6 +22,9 @@
     "test": "npm-run-all lint test:*",
     "test:ember": "ember test"
   },
+  "dependencies": {
+    "some-addon": "0.0.0"
+  },
   "devDependencies": {
     "@ember/optional-features": "^2.0.0",
     "@ember/test-helpers": "^2.6.0",
@@ -41,6 +44,7 @@
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.2",
+    "ember-css-modules": "^2.0.1",
     "ember-data": "~4.2.0",
     "ember-export-application-global": "^2.0.1",
     "ember-fetch": "^8.1.1",

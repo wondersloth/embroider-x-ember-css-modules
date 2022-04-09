@@ -1,0 +1,8 @@
+.salutation-container {
+  border: 1px dashed blue;
+}
+
+.salutation-message {
+  display: block;
+  color: blue;
+}
