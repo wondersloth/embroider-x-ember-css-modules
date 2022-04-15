@@ -83,7 +83,7 @@ In an embroider build the file paths don't contain the the `modulePrefix` betwee
 - Note the hashes don't match.
 
 **GOOD**
-```
+```css
 /* styles for some-addon/components/greeting.css */
 ._greeting-container_i4dy9v {
   border: 1px dashed green;
@@ -100,7 +100,7 @@ In an embroider build the file paths don't contain the the `modulePrefix` betwee
 ```
 
 **BAD**
-```
+```css
 /* styles for components/greeting.css */
 ._greeting-container_1lfv76 {
   border: 1px dashed green;
