@@ -1,0 +1,16 @@
+ember-css-modules:addon included in sample-app
+ember-css-modules:addon included in some-addon
+ember-css-modules:output-styles-preprocessor concatenating module stylesheets: { inputFiles: [ '**/*.css' ], outputFile: 'some-addon.css', allowNone: true, sourceMapConfig: undefined }
+ember-css-modules:output-styles-preprocessor concatenating module stylesheets: { inputFiles: [ '**/*.css' ], outputFile: '/assets/sample-app.css', allowNone: true, sourceMapConfig: undefined }
+ember-css-modules:generate-scoped-name scoped class .greeting-container => ._greeting-container_1lfv76 (/components/greeting.css)
+ember-css-modules:generate-scoped-name scoped class .greeting-message => ._greeting-message_1lfv76 (/components/greeting.css)
+ember-css-modules:generate-scoped-name scoped class .addon-container => ._addon-container_1tmc29 (/components/layout.css)
+ember-css-modules:output-styles-preprocessor implicit dependencies: []
+ember-css-modules:output-styles-preprocessor sorted dependencies []
+ember-css-modules:generate-scoped-name scoped class .salutation-container => ._salutation-container_1p5xxd (/components/salutation.css)
+ember-css-modules:generate-scoped-name scoped class .salutation-message => ._salutation-message_1p5xxd (/components/salutation.css)
+ember-css-modules:generate-scoped-name scoped class .app-container => ._app-container_1qsai7 (/styles/application.css)
+ember-css-modules:modules-preprocessor recording dependency from /var/folders/1p/grc2p_g11hz13gkj8413rqv00003jl/T/broccoli-50180NUROXZ9lrujc/out-541-module_source_funnel/styles/application.css to /Users/medwards/Workspace/os/embroider-x-ember-css-modules/packages/some-addon/addon/components/layout.css
+ember-css-modules:generate-scoped-name scoped class .addon-container => ._addon-container_18zxja (/some-addon/components/layout.css)
+ember-css-modules:output-styles-preprocessor implicit dependencies: []
+ember-css-modules:output-styles-preprocessor sorted dependencies []

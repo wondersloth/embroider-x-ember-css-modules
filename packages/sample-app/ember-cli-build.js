@@ -3,11 +3,9 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
-  const shouldUseEmbroider = false;
+  const shouldUseEmbroider = process.env.EMBROIDER_ENABLED == 'true';
 
-  let app = new EmberApp(defaults, {
-    // Add options here
-  });
+  let app = new EmberApp(defaults, {});
 
   // Use `app.import` to add additional libraries to the generated
   // output files.

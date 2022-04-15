@@ -1,0 +1,3 @@
+.app-container {
+  composes: addon-container from 'some-addon/components/layout.css';
+}

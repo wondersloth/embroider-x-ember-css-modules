@@ -11,6 +11,9 @@
     "packages/sample-app",
     "packages/some-addon"
   ],
+  "resolutions": {
+    "ember-auto-import": "^2.4.1"
+  },
   "volta": {
     "node": "14.19.1"
   }

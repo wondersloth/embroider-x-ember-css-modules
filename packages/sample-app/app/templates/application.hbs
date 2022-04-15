@@ -1,14 +1,23 @@
 {{page-title "SampleApp"}}
+<div local-class="app-container" style="border: 2px dashed blue; padding: 5px;">
+  <h2 id="title">embroider x ember-css-modules</h2>
 
-<h2 id="title">Welcome to the Sample App</h2>
+  <h3>Bug</h3>
+  <p>
+    When an embroider-app depends on a v1 addon that use ember-css-modules, and composes a style from that addon. 
+    It fails to construct the correct path for the style.
+  </p>
 
-<section>
-  <h2>App</h2>
-  <Salutation @origin="app"/>
-</section>
-<section>
-  <h2>Addon</h2>
-  <Greeting/>
-</section>
+  <h3>Investigation</h3>
+  <p>
+    When comparing the hash values for the classnames in classic vs embroider, we see no difference in the
+    class name on the component, but the css output differs.
+  </p>
 
-{{outlet}}
+  <h3>Reproduction</h3>
+  <p>If the containing <code>div</code> has:</p>
+  <ul>
+    <li>a <span style="font-weigh:bold; color: blue;">blue</span> dashed border, it is not working correctly.</li>
+    <li>a <span style="font-weigh:bold; color: magenta;">magenta</span> solid border, it is working correctly.</li>
+  </ul>
+</div>
