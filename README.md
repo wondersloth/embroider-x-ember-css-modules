@@ -1,11 +1,12 @@
 # embroider-x-ember-css-modules
 
 ## Problem
-ember-css-modules doesn't have correct path when generating-scoped-name during an embroider build.
-
-When an embroider app consumes a classic addon, the hash created from `generate-scoped-name` or hash is not correctly generated to match between the className in the template and the augmented css file.
+When an **embroider** app using `ember-css-modules` depends on a `v1` /  _classic_ addon using `ember-css-modules`, the generated scoped classnames in the css file don't match the classnames injected in the templates.
 
 ### Investigation
+
+- Only happens when doing an embroider app build with a v1 / classic addon using ecm.
+- In `generate-scoped-name`  the paths used lack the `moduleName`.
 
 ## Classic (Working)
 **Steps to Reproduce**
