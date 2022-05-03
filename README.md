@@ -43,7 +43,7 @@ ember-css-modules:output-styles-preprocessor sorted dependencies [] +1ms
 $ cd packages/some-addon
 $ yarn build;
 $ cd ../sample-app;
-$ EMBROIDER_ENABLED=false DEBUG=ember-css-modules:* JOBS=0 node ./node_modules/.bin/ember build  
+$ EMBROIDER_ENABLED=true DEBUG=ember-css-modules:* JOBS=0 node ./node_modules/.bin/ember build  
 ```
 
 **OUTPUT**
