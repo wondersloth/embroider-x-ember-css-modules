@@ -3,7 +3,7 @@
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function (defaults) {
-  const shouldUseEmbroider = process.env.EMBROIDER_ENABLED == 'true';
+  const shouldUseEmbroider = process.env.EMBROIDER == 'true';
 
   let app = new EmberApp(defaults, {});
 

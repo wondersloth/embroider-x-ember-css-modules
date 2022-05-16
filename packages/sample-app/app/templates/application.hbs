@@ -4,8 +4,19 @@
 
   <h3>Bug</h3>
   <p>
-    When an embroider-app depends on a v1 addon that use ember-css-modules, and composes a style from that addon. 
-    It fails to construct the correct path for the style.
+    When an embroider-app depends on a v1 addon that use <b>ember-css-modules</b>, and <b>composes</b> a style from that addon:
+    <code style="display: block; background-color: #222; color: #DDD; padding: 5px;  white-space: pre;">
+      /* application.css */
+      .app-container {
+        composes: addon-container from 'some-addon/components/layout.css';
+      }
+
+      /* some-addon/components/layout.css */
+      .addon-container {
+        border: 2px solid magenta !important;
+      }
+    </code> 
+    It fails to construct the correct path for the style
   </p>
 
   <h3>Investigation</h3>
